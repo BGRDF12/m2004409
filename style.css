@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(232, 223, 223, 0.8),rgba(232, 223, 223, 0.8));
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    height: 55px;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #CCCCCC;
+}
+.logo{
+    margin-left: 25px;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #F7FF2D;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    
+}
+.content{
+    margin: auto;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-45%);
+    text-align: center;
+    color: #000000;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 75px;
+    
+}
+.content p{
+    margin: 20px 0;
+    font-weight: 100;
+    line-height: 25px;
+    margin-bottom: 75px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #F7FF2D;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.bestbooks{
+    width: auto;
+    padding-top: 25px;
+    text-align: left;
+    margin-left: 20px;
+}
+.booktable{
+    width: auto;
+    padding-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap:10px;
+    background-image: #fff;
+    background-size: cover;
+    background-position: center;
+    
+}
+.bookbox{
+    background-color: #fff;
+    width: 330px auto;
+}
+img{
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.footer{
+    width: auto;
+    background-color: #EEEEEE;
+}
+.socialIcons{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: #EEEEEE;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: yellow;
+    transition: 0.5s;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:#000000;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:auto;
+        text-align: center;
+        
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}

@@ -1,0 +1,14 @@
+.background{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(232, 223, 223, 0.8),rgba(232, 223, 223, 0.8));
+    background-size: cover;
+    background-position: center;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50;
+    transform: translate(-50% -50%);
+}
